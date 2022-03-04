@@ -17,7 +17,7 @@ class CSVTable(wx.Frame):
         self.panel = wx.Panel(self.frame)
         self.sizer = wx.BoxSizer(wx.VERTICAL)
         self.grid = wx.grid.Grid(self.panel,wx.ID_ANY,wx.DefaultPosition,wx.Size(1,1))
-        self.grid.CreateGrid(len(file),len(file[0]))
+        self.grid.CreateGrid(len(file)-1,len(file[0]))
         for i in range(len(file[0])):
             self.grid.SetColLabelValue(i,file[0][i])
         for i in range(len(file)-1):

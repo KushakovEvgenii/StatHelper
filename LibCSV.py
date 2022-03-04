@@ -13,6 +13,3 @@ class CSV:
 		    for row in read_file:
 		    	massive.append(row)
 		    return massive
-
-csv_module = CSV()
-file = csv_module.read('F:/Проекты/addresses.csv')
