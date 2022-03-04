@@ -1,8 +1,9 @@
+'''This module is used for starting program'''
+
 import wx
-from GUI.Start import StartWindow
+from LibChooseCSV import CSVChoose
 
 if __name__ == '__main__':
-	app = wx.App()
-	start_frame = StartWindow(None, title = "StatHelper", size = wx.Size(300,300))
-	start_frame.Show()
-	app.MainLoop()
+    app = wx.App()
+    frm = CSVChoose(None, title='Import CSV file', size  = wx.Size(640,360))
+    app.MainLoop()
